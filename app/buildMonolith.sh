@@ -18,8 +18,7 @@ createGoModuleIfItDeosNotExist() {
    fi
 }
 
-executableDir="bin"
-crateDirectoryIfItDoesNotExist $executableDir
+crateDirectoryIfItDoesNotExist "bin" 
 createGoModuleIfItDeosNotExist
 go build -o ./bin/monolith ./monolith
 
