@@ -11,7 +11,7 @@ echo "The Network Addressof the Container is ${CIP}"
 
 # Run the program
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-echo "Show the program executed -- " `curl $CIP`
+./showServicesProvides.sh ${CIP} 80
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
 # Stop the dockers 
