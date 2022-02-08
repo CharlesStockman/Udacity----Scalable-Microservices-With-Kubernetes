@@ -19,5 +19,13 @@ The monolith executable should be executed as root and showServicesProvided.sh (
 ## Docker
 The purpose of these two program are to create the application and then add the application and create the docker image
 
-In the App Directory buildContainerImage.sh will create the executable that will become part of the image and buildMonolithImage.sh will use create the container according to app/modules/DockerFile and run MonolithContainer will run and show simple commands
+In the App Directory 
+
+### Monolith Docker Images
+
+The buildContainerImage.sh will build the executable the will become part of the image.
+
+The buildMonolitImage.sh will create the monlith image using add the executable create by \"buildContainerImage.sh\" with a tag: 1.0.0.
+
+
   
