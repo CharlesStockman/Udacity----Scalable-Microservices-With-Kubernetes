@@ -27,5 +27,14 @@ The buildContainerImage.sh will build the executable the will become part of the
 
 The buildMonolitImage.sh will create the monlith image using add the executable create by \"buildContainerImage.sh\" with a tag: 1.0.0.
 
+The runMonolith.sh will start a contianer and display "docker ps" and docker input.
+
+The runContainerImage.sh will run the image and then get the ip address of container using docker inspect ( .NetworkSettings.IPAddress ).  The script 
+will use the ip address to show the services provided ( displaying a message and authentication ).
+
+The 
+
+
+
 
   
