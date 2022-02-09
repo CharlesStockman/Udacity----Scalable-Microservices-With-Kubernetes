@@ -17,11 +17,7 @@ The buildMonolith.sh ( builds the monolith as a go program ) places the executab
 The monolith executable should be executed as root and showServicesProvided.sh ( show the service that the monolith provides ) can be executed as any user. 
 
 ## Docker
-The purpose of these two program are to create the application and then add the application and create the docker image
-
 In the App Directory 
-
-### Monolith Docker Images
 
 The buildContainerImage.sh will build the executable the will become part of the image.
 
@@ -32,7 +28,20 @@ The runMonolith.sh will start a contianer and display "docker ps" and docker inp
 The runContainerImage.sh will run the image and then get the ip address of container using docker inspect ( .NetworkSettings.IPAddress ).  The script 
 will use the ip address to show the services provided ( displaying a message and authentication ).
 
-The 
+## Kubernetes
+In thge kubernetes directory
+
+There is a problem.  When I am creating a pod it takes longer than it should to be created.  I am going reseach this as I learn more about Kubernetes and 
+Microservices.
+
+The buildMonolith.sh creates a pod from the monoith.yaml and then does a port forwared and show the information from the get pods and describes pods.
+
+The useMonolith.sh shows the services that the pod can provides and dispalys the log at the end.
+
+The healthChecks.sh parse the JSON so the liveness and readiness probe are dipslay for the users knowledge.
+
+
+
 
 
 
